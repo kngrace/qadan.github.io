@@ -101,7 +101,8 @@ function get_weights_data() {
           "name": "Off",
           "description": "Never show item count in dungeons."
         }
-      },
+      }
+    },
     "progressive": {
       "name": "Item Progression",
       "group": "Item Placement",
