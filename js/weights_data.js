@@ -43,12 +43,12 @@ function get_weights_data() {
         "basic": {
           "name": "Basic",
           "description": "Items are not placed in obscure or hard-to-reach locations.",
-          "default": 33
+          "default": 100
         },
         "advanced": {
           "name": "Advanced",
           "description": "Items may be placed in obscure or hard-to-reach locations, notably in dark rooms that can be lit with the fire rod.",
-          "default": 67
+          "default": 0
         }
       }
     },
@@ -60,22 +60,22 @@ function get_weights_data() {
         "standard": {
           "name": "Standard",
           "description": "Maps, keys and compasses can be found shuffled inside their respective dungeons.",
-          "default": 40
+          "default": 100
         },
         "mc": {
           "name": "Maps and Compasses",
           "description": "Maps and compasses can be found outside of their respective dungeons.",
-          "default": 15
+          "default": 0
         },
         "mcs": {
           "name": "Maps, Compasses and Small Keys",
           "description": "Maps, compasses and small keys can be found outside of their respective dungeons.",
-          "default": 15
+          "default": 0
         },
         "full": {
           "name": "Full Keysanity",
           "description": "Maps, compasses, small keys and big keys can be found outside of their respective dungeons.",
-          "default": 20
+          "default": 0
         }
       }
     },
@@ -86,17 +86,16 @@ function get_weights_data() {
       "options": {
         "items": {
           "name": "100% Inventory",
-          "description": "All inventory items will be obtainable, but keys in dungeons may be locked behind themselves.",
-          "default": 70
+          "description": "All inventory items will be obtainable, but keys in dungeons may be locked behind themselves."
         },
         "locations": {
           "name": "100% Locations",
-          "description": "All 216 locations in the game will be accessible."
+          "description": "All 216 locations in the game will be accessible.",
+          "default": 100
         },
         "none": {
           "name": "Beatable Only",
-          "description": "The seed is only guaranteed to be beatable, and some inventory items or keys may never be accessible.",
-          "default": 30
+          "description": "The seed is only guaranteed to be beatable, and some inventory items or keys may never be accessible."
         }
       }
     },
@@ -108,27 +107,27 @@ function get_weights_data() {
         "ganon": {
           "name": "Defeat Ganon",
           "description": "The player must defeat Aghanim 2 at the top of Ganon's Tower, collect the right number of crystals to kill Ganon, and kill Ganon.",
-          "default": 35
+          "default": 20
         },
         "fast_ganon": {
           "name": "Fast Ganon",
           "description": "The player must collect the right number of crystals to kill ganon, and kill Ganon. The hole leading to Ganon is pre-opened.",
-          "default": 40
+          "default": 80
         },
         "dungeons": {
           "name": "All Dungeons",
           "description": "The player must complete all Light and Dark World dungeons, including Aghanim's Tower and Ganon's Tower, then kill Ganon.",
-          "default": 10
+          "default": 0
         },
         "pedestal": {
           "name": "Pedestal",
           "description": "The player must obtain all three pendants, then pull the Master Sword pedestal.",
-          "default": 10
+          "default": 0
         },
         "triforce_hunt": {
           "name": "Triforce Hunt",
           "description": "The player must collect 20 out of the 30 triforce pieces hidden throughout Hyrule.",
-          "default": 5
+          "default": 0
         }
       }
     },
@@ -139,35 +138,35 @@ function get_weights_data() {
       "options": {
         "0": {
           "name": "0",
-          "default": 5
+          "default": 0
         },
         "1": {
           "name": "1",
-          "default": 5
+          "default": 0
         },
         "2": {
           "name": "2",
-          "default": 10
+          "default": 0
         },
         "3": {
           "name": "3",
-          "default": 10
+          "default": 0
         },
         "4": {
           "name": "4",
-          "default": 20
+          "default": 0
         },
         "5": {
           "name": "5",
-          "default": 40
+          "default": 100
         },
         "6": {
           "name": "6",
-          "default": 15
+          "default": 0
         },
         "7": {
           "name": "7",
-          "default": 5
+          "default": 0
         },
         "random": {
           "name": "Random",
@@ -182,35 +181,35 @@ function get_weights_data() {
       "options": {
         "0": {
           "name": "0",
-          "default": 5
+          "default": 0
         },
         "1": {
           "name": "1",
-          "default": 5
+          "default": 0
         },
         "2": {
           "name": "2",
-          "default": 5
+          "default": 0
         },
         "3": {
           "name": "3",
-          "default": 5
+          "default": 0
         },
         "4": {
           "name": "4",
-          "default": 10
+          "default": 0
         },
         "5": {
           "name": "5",
-          "default": 10
+          "default": 0
         },
         "6": {
           "name": "6",
-          "default": 20
+          "default": 100
         },
         "7": {
           "name": "7",
-          "default": 40
+          "default": 0
         },
         "random": {
           "name": "Random",
@@ -226,22 +225,22 @@ function get_weights_data() {
         "standard": {
           "name": "Standard",
           "description": "Start in Uncle's house, get a weapon from him, and save Zelda from Hyrule Castle at the start of the game.",
-          "default": 35
+          "default": 50
         },
         "open": {
           "name": "Open",
           "description": "Zelda has been pre-rescued for you, and you can begin in Link's House or Sanctuary from the beginning",
-          "default": 35
+          "default": 50
         },
         "inverted": {
           "name": "Inverted",
           "description": "Start in the Dark World, requiring the Moon Pearl to traverse the Light World as Link. It's very much worth checking the details for this on the <a href='https://alttpr.com/en/options' target='_blank'>official site</a>.",
-          "default": 20
+          "default": 0
         },
         "retro": {
           "name": "Retro",
           "description": "Arrows must be purchased, keys work in any dungeon and can be purchased, firing arrows costs money, and some single-entry caves contain take-any choices or a sword.",
-          "default": 10
+          "default": 0
         }
       }
     },
@@ -284,11 +283,11 @@ function get_weights_data() {
       "options": {
         "on": {
           "name": "On",
-          "default": 50
+          "default": 100
         },
         "off": {
           "name": "Off",
-          "default": 50
+          "default": 0
         }
       }
     },
@@ -300,22 +299,22 @@ function get_weights_data() {
         "randomized": {
           "name": "Randomized",
           "description": "All four swords are placed in random locations. In a standard seed, Uncle may give you a different weapon.",
-          "default": 40
+          "default": 0
         },
         "assured": {
           "name": "Assured",
           "description": "Link starts the game equipped with the Fighter's Sword. Three other swords are placed in random locations.",
-          "default": 40
+          "default": 100
         },
         "vanilla": {
           "name": "Vanilla",
           "description": "One sword is placed on Uncle, one on the Master Sword pedestal, one at the Blacksmith's, and one at Pyramid Fairy.",
-          "default": 10
+          "default": 0
         },
         "swordless": {
           "name": "Swordless",
           "description": "No swords are placed in the game. Some changes are made to gameplay to facilitate this; check the <a href='https://alttpr.com/en/options' target='_blank'>official site</a> for details.",
-          "default": 5
+          "default": 0
         }
       }
     },
@@ -327,12 +326,12 @@ function get_weights_data() {
         "normal": {
           "name": "Normal",
           "description": "No changes are made to the item pool from the original game.",
-          "default": 80
+          "default": 100
         },
         "hard": {
           "name": "Hard",
           "description": "A maximum of 11 hearts can be found, as well as up to green mail, tempered sword, fire shield, and wooden arrows.",
-          "default": 20
+          "default": 0
         },
         "expert": {
           "name": "Expert",
@@ -348,12 +347,12 @@ function get_weights_data() {
         "normal": {
           "name": "Normal",
           "description": "All items function as they do in the original game.",
-          "default": 80
+          "default": 100
         },
         "hard": {
           "name": "Hard",
           "description": "Potions are debuffed, faeries are made inaccessible, the cape magic consumption rate is doubled, Byrna no longer grants invincibility, and the boomerang no longer stuns enemies.",
-          "default": 20
+          "default": 0
         },
         "expert": {
           "name": "Expert",
@@ -397,12 +396,12 @@ function get_weights_data() {
         "default": {
           "name": "Normal",
           "description": "The amount of damage enemies deal is not changed from the original game.",
-          "default": 80
+          "default": 100
         },
         "shuffled": {
           "name": "Shuffled",
           "description": "Enemies swap the amount of damage they deal amongst themselves.",
-          "default": 20
+          "default": 0
         },
         "random": {
           "name": "Random",
@@ -418,12 +417,12 @@ function get_weights_data() {
         "default": {
           "name": "Normal",
           "description": "The amount of damage required to kill enemies is not changed from the original game.",
-          "default": 80
+          "default": 100
         },
         "easy": {
           "name": "Easy",
           "description": "Each enemy is randomly given 1-4HP, requiring 1-2 fighter's sword slashes to kill.",
-          "default": 20
+          "default": 0
         },
         "hard": {
           "name": "Hard",
@@ -443,22 +442,22 @@ function get_weights_data() {
         "none": {
           "name": "Default",
           "description": "All bosses encountered in the game are the same as in the original game.",
-          "default": 60
+          "default": 100
         },
         "simple": {
           "name": "Simple",
           "description": "The exact count of dungeon bosses and Ganon's Tower bosses remains the same, but they are shuffled between themselves.",
-          "default": 10
+          "default": 0
         },
         "full": {
           "name": "Full",
           "description": "The three bosses which appear twice are randomized, and then bosses are shuffled between themselves.",
-          "default": 10
+          "default": 0
         },
         "random": {
           "name": "Random",
           "description": "All bosses in dungeons and Ganon's Tower are chosen at random.",
-          "default": 20
+          "default": 0
         }
       }
     },
@@ -470,17 +469,17 @@ function get_weights_data() {
         "none": {
           "name": "Default",
           "description": "Enemies encountered are the same as in the original game.",
-          "default": 80
+          "default": 100
         },
         "shuffled": {
           "name": "Shuffled",
           "description": "Enemies encountered are randomized. Thieves can be killed. Rooms no longer require specific weapons to kill all enemies (e.g., killing red mimics with the bow).",
-          "default": 10
+          "default": 0
         },
         "random": {
           "name": "Random",
           "description": "Same as shuffled, but bush enemies are randomized, and the chance a bush may contain an enemy is increased. A random tile room pattern is selected.",
-          "default": 10
+          "default": 0
         }
       }
     },
@@ -552,10 +551,11 @@ function get_weights_data() {
         },
         "normal": {
           "name": "1x Speed",
-          "default": 100
+          "default": 0
         },
         "half": {
-          "name": "1/2 Speed"
+          "name": "1/2 Speed",
+          "default": 100
         },
         "quarter": {
           "name": "1/4 Speed"
