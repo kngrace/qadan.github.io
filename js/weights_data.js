@@ -79,6 +79,51 @@ function get_weights_data() {
         }
       }
     },
+    "dungeon_counters": {
+      "name": "Dungeon Counters",
+      "group": "Item Placement",
+      "description": "Controls if/when a display appears for the amount of items checked in a dungeon.",
+      "options": {
+        "on": {
+          "name": "On",
+          "description": "Always display amount of items checked in a dungeon.",
+          "default": 100
+        },
+        "pickup": {
+          "name": "Pickup",
+          "description": "Show when compass is picked up."
+        },
+        "default": {
+          "name": "Default",
+          "description": "Show when compass is picked up if the compass itself is shuffled."
+        },
+        "off": {
+          "name": "Off",
+          "description": "Never show item count in dungeons."
+        }
+      },
+    "progressive": {
+      "name": "Item Progression",
+      "group": "Item Placement",
+      "description": "Enable or disable progressive items (swords, shields, bow).",
+      "options": {
+        "On": {
+          "name": "On",
+          "description": "All items progressive.",
+          "default": 30
+        },
+        "Off": {
+          "name": "Off",
+          "description": "No Items progressive.",
+          "default": 30
+        },
+        "Random": {
+          "name": "Random",
+          "description": "Randomly decides for all items. Swords could be progressive, shields might be.",
+          "default": 40
+        }
+      }
+    },
     "accessibility": {
       "name": "Item Check Accessibility",
       "group": "Item Placement",
