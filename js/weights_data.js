@@ -651,5 +651,5 @@ function get_weights_data() {
         }
       }
     }
-  };
+  }
 }
